@@ -9,6 +9,7 @@ const GroomSection = () => {
   return (
     <motion.section
       className="px-6 py-8 border-pink-200 bg-pink-50/50 rounded-r-xl shadow-sm relative flex flex-col items-center"
+      style={{ backgroundColor: '#fdf8f2' }}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.5 }}
@@ -97,8 +98,8 @@ const GroomSection = () => {
           </div>
         </div>
       </div>
-      <h2 className="text-3xl font-semibold font-satisfy text-pink-600 mb-4 text-center w-full">About Ajai</h2>
-      <p className="text-gray-500 text-l text-center w-full">Ajai is a senior software engineer working at Google, Bangalore. He comes from coimbatore, has aclose-knit family that values tradition and simplicity.</p>
+      <h2 className="text-3xl font-semibold font-satisfy text-pink-600 mb-4 text-center w-full">About Jaykayswar</h2>
+      <p className="text-gray-500 text-l text-center w-full">Jaykayswar is a senior software engineer working at Google, Bangalore. He comes from coimbatore, has aclose-knit family that values tradition and simplicity.</p>
     </motion.section>
   );
 };

@@ -9,6 +9,7 @@ const BrideSection = () => {
   return (
     <motion.section
       className="px-6 py-8 bg-pink-50/50 shadow-sm relative flex flex-col items-center"
+      style={{ backgroundColor: '#fdf8f2' }}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.5 }}
@@ -97,8 +98,8 @@ const BrideSection = () => {
           </div>
         </div>
       </div>
-      <h2 className="text-3xl font-semibold font-satisfy text-pink-600 mb-4 text-center w-full">About Meera</h2>
-      <p className="text-gray-500 text-l text-center w-full">Meera is an artist from Kochi, known for her creativity and kindness. Her family cherishes their cultural roots and welcomes everyone with open arms.</p>
+      <h2 className="text-3xl font-semibold font-satisfy text-pink-600 mb-4 text-center w-full">About Jayashree</h2>
+      <p className="text-gray-500 text-l text-center w-full">Jayashree is an artist from Kochi, known for her creativity and kindness. Her family cherishes their cultural roots and welcomes everyone with open arms.</p>
     </motion.section>
   );
 };

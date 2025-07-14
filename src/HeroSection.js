@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import BlurText from "./BlurText";
 
 const HeroSection = () => (
   <motion.section
@@ -15,15 +16,22 @@ const HeroSection = () => (
     />
     {/* Gradient overlay for text visibility */}
     <div className="absolute inset-0 z-10 pointer-events-none" style={{background: "linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0,0,0,0.5) 100%)"}} />
-    <motion.div
-      className="absolute bottom-8 right-8 z-20 text-right"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.2, delay: 0.5 }}
-    >
-      <h1 className="text-4xl md:text-5xl font-satisfy text-pink-100 drop-shadow-lg mb-1">Ajai ❤️ Meera</h1>
-      <span className="text-3xl md:text-3xl font-satisfy text-pink-200 mx-2">the couple.</span>
-    </motion.div>
+    <div className="absolute bottom-8 right-8 z-20 text-right w-full flex flex-col items-end">
+    <BlurText
+        text="the couple"
+        delay={150}
+        animateBy="words"
+        direction="top"
+        className="text-xl md:text-2xl font-satisfy text-pink-100 drop-shadow-lg"
+      />
+      <BlurText
+        text="Jaykayswar ❤️ Jayashree"
+        delay={150}
+        animateBy="words"
+        direction="top"
+        className="text-4xl md:text-4xl font-satisfy text-pink-100 drop-shadow-lg"
+      />
+    </div>
   </motion.section>
 );
 

@@ -9,17 +9,18 @@ import RSVPSection from "./RSVPSection";
 
 function App() {
   return (
-    <div className="min-h-screen bg-white flex justify-center">
-      <div className="w-full max-w-[420px] bg-white min-h-screen shadow-xl flex flex-col">
+
+    <div className="min-h-screen flex justify-center" style={{ backgroundColor: '#fdf8f2' }}>
+      <div className="w-full max-w-[420px] min-h-screen shadow-xl flex flex-col" style={{ backgroundColor: '#fdf8f2' }}>
         <HeroSection />
         {/* Decorative Patterned Container with fade to white */}
         <div
           style={{
             height: '20vh',
-            minHeight: '80px',
+            minHeight: '100px',
             width: '100%',
             position: 'relative',
-            backgroundColor: '#FAF4EF',
+            backgroundColor: '#fdf8f2',
             backgroundImage:
               'radial-gradient(#000 5%, #0000 6%), radial-gradient(#000 5%, #0000 6%)',
             backgroundPosition: '0 0, 1.5rem 1.5rem',
@@ -36,7 +37,7 @@ function App() {
               width: '100%',
               height: '100%',
               pointerEvents: 'none',
-              background: 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.85) 100%)',
+              background: 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgb(253,248,242) 100%)',
             }}
           />
         </div>
