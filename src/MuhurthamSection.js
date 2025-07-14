@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { GiLotus } from "react-icons/gi";
+import ScrollFloat from "./ScrollFloat";
 
 const MuhurthamSection = () => (
   <motion.section
@@ -11,7 +12,17 @@ const MuhurthamSection = () => (
     transition={{ duration: 0.7, delay: 0.3 }}
   >
     <GiLotus className="absolute right-4 top-4 text-blue-300 text-2xl animate-pulse" />
-    <h2 className="text-xl font-semibold text-pink-600 mb-2">Muhurtham</h2>
+    <ScrollFloat
+      animationDuration={1}
+      ease="back.inOut(2)"
+      scrollStart="center bottom+=50%"
+      scrollEnd="bottom bottom-=40%"
+      stagger={0.03}
+      containerClassName="mb-2"
+      textClassName="text-xl font-semibold text-pink-600"
+    >
+      Muhurtham
+    </ScrollFloat>
     <div className="mb-2">📅 <span className="font-medium">Date:</span> January 25, 2025</div>
     <div className="mb-2">🕗 <span className="font-medium">Time:</span> 7:00 AM to 9:00 AM</div>
     <div className="mb-4">📍 <span className="font-medium">Venue:</span> Lakshmi Kalyana Mandapam, Indiranagar, Bangalore</div>
