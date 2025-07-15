@@ -6,6 +6,7 @@ import BrideSection from "./BrideSection";
 import ReceptionSection from "./ReceptionSection";
 import MuhurthamSection from "./MuhurthamSection";
 import RSVPSection from "./RSVPSection";
+import ScrollVelocity from "./ScrollVelocity";
 
 function App() {
   return (
@@ -51,8 +52,37 @@ function App() {
           />
         </div>
         <BrideSection />
-        <ReceptionSection />
+        <div style={{ position: "relative", width: "100%", paddingTop: "3rem", paddingBottom: "3rem", color: "#4B2E05" }}>
+          <img
+            src={process.env.PUBLIC_URL + "/images/paperback_bg.jpg"}
+            alt="Background"
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              zIndex: 0,
+              pointerEvents: "none",
+              userSelect: "none",
+            }}
+            aria-hidden="true"
+            draggable="false"
+          />
+          {/* Top inner shadow */}
+          
+          <div style={{ position: "relative", zIndex: 2 }}>
+            <ScrollVelocity
+              texts={["மாங்கல்யம் ஆனந்தம் பரிசளிக்கும் நேரம்", "குடும்பம் கூடும் நம் வாழ்வின் புது பேரம்"]}
+              velocity={60}
+              className="custom-scroll-text"
+            />
+          </div>
+        </div>
         <MuhurthamSection />
+        <ReceptionSection />
+        
         <RSVPSection />
       </div>
     </div>

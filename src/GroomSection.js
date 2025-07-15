@@ -98,7 +98,7 @@ const GroomSection = () => {
           </div>
         </div>
       </div>
-      <h2 className="text-3xl font-semibold font-satisfy text-pink-600 mb-4 text-center w-full">About Jaykayswar</h2>
+      <h2 className="text-3xl font-semibold font-satisfy #4B2E1E mb-4 text-center w-full">About Jaykayswar</h2>
       <p className="text-gray-500 text-l text-center w-full">Jaykayswar is a senior software engineer working at Google, Bangalore. He comes from coimbatore, has aclose-knit family that values tradition and simplicity.</p>
     </motion.section>
   );
