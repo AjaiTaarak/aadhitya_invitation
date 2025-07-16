@@ -5,7 +5,7 @@ import RollingGallery from "./RollingGallery";
 
 const ReceptionSection = () => (
   <motion.section
-    className="shadow-sm relative"
+    className="shadow-sm relative pb-10"
     initial={{ opacity: 0, y: 40 }}
     style={{ backgroundColor: '#4B2E1E', color: '#ffe9e9' }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -23,8 +23,8 @@ const ReceptionSection = () => (
     >
       Reception
     </ScrollFloat>
-    <RollingGallery autoplay={true} pauseOnHover={true} />
-    <p className=" text-center w-full" style={{ color: '#ffe9e9', opacity: 0.9 }}>
+    <RollingGallery autoplay={false} pauseOnHover={true} />
+    <p className=" text-center w-full pl-1 pr-1" style={{ color: '#ffe9e9', opacity: 0.9 }}>
       With love in our hearts and blessings from our families, we invite you to be part of a beautiful beginning at our wedding reception.
     </p>
     {/* Custom date/time layout */}
@@ -44,7 +44,7 @@ const ReceptionSection = () => (
     <div className="flex justify-center">
     <button
         onClick={() => window.open("https://www.google.com/maps?q=Lakshmi+Kalyana+Mandapam+Bangalore", "_blank")}
-        className="learn-more btn-reception">
+        className="learn-more btn-reception mb-4">
         View directions
       </button>
     </div>

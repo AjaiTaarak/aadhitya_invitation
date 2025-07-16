@@ -7,6 +7,8 @@ import ReceptionSection from "./ReceptionSection";
 import MuhurthamSection from "./MuhurthamSection";
 import RSVPSection from "./RSVPSection";
 import ScrollVelocity from "./ScrollVelocity";
+import { FaWhatsapp, FaInstagram, FaPinterest } from "react-icons/fa";
+import { FiInstagram, FiPinterest, FiMessageCircle } from "react-icons/fi";
 
 function App() {
   return (
@@ -84,6 +86,38 @@ function App() {
         <ReceptionSection />
         
         <RSVPSection />
+        <div className="contact-footer-container">
+          
+          <div className="container">
+            <div style={{
+              position: 'relative',
+              zIndex: 2,
+              padding: '3rem 0',
+              color: '#fff',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}>
+              {/* Centered Logo */}
+              <a href="https://occasionaly.in" target="_blank" rel="noopener noreferrer">
+                <img 
+                  src="/Occasionaly_Main_logo_White.png" 
+                  alt="Occasionaly.in Logo" 
+                  style={{maxWidth: '320px', width: '50%', height: 'auto', minWidth: 120, margin: '0 auto', display: 'block', textAlign: 'center'}} 
+                />
+              </a>
+              
+              {/* Centered Social Icons below logo */}
+              <div style={{ width: '100%', display: 'flex', justifyContent: 'center', gap: '1.5rem', marginTop: '2.5rem' }}>
+                <a href="https://wa.link/v2iizo" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" style={{ color: '#fff', fontSize: '1.5rem' }}><FiMessageCircle /></a>
+                <a href="https://www.instagram.com/occasionaly.in/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style={{ color: '#fff', fontSize: '1.5rem' }}><FiInstagram /></a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" style={{ color: '#fff', fontSize: '1.5rem' }}><FaPinterest /></a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
       </div>
     </div>
   );
